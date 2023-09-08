@@ -11,7 +11,7 @@
     -   Un encabezado de nivel 2 con el texto "Versiones de HTML" antes de dos nuevos párrafos que contienen el texto "Tim Berners-Lee definió la primera versión de HTML en el año 1991" y "En la actualidad, la última versión de HTML es HTML5".
 
 
-Clica no seguinte documento html :  [exercicio1.html](./exercicio1.html)
+Clica no seguinte documento html :  [exercicio1.html](../HTML/exercicio1.html)
 
 ![texto do enunciado](./0_HTML_conceptos-basicos-1.png)
 
