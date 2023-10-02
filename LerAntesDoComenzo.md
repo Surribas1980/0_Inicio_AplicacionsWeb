@@ -4,7 +4,6 @@
 >
 >  - express
 >  - cors
->  - body-parser
 
 Neste sentido, deberemos instalalos dende a consola.
 
@@ -38,7 +37,7 @@ A instalación dos outros paquetes asociados, farémolo da seguinte maneira:
 npm i -D <nome de paquete>
 ```
 
-nos instalaremos: __cors__ e __body-parser__
+nos instalaremos: __cors__ 
 
 > ### O arquivo: 'package.json'
 
@@ -86,7 +85,6 @@ Neste caso, dádevos conta que se modificou con varios elementos, un denominado 
     "node-fetch": "^3.2.6"
   },
   "devDependencies": {
-    "body-parser": "^1.20.2",
     "cors": "^2.8.5"
   }
 }
@@ -100,14 +98,13 @@ Neste caso, dádevos conta que se modificou con varios elementos, un denominado 
 
 ```javascript
 const express = require("express");
-const bodyParser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
 const app = express();
 
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));//parsea solo string
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));//parsea solo string
 app.use(cors())
 
 // Accedo o arquivo estático
